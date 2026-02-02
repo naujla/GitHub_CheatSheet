@@ -1,0 +1,175 @@
+Topic: Git
+Explanation: Distributed version control system; tracks changes, enables collaboration, revert to older versions
+Command: —
+
+Topic: Configure User
+Explanation: Set global username and email
+Command: git config --global user.name "Narender Aujla"; git config --global user.email "aujla@gmail.com"; git config --list
+
+Topic: Initialize Repo
+Explanation: Start a new Git repository
+Command: git init
+
+Topic: Status
+Explanation: Check file status (modified, staged, untracked)
+Command: git status
+
+Topic: Diff
+Explanation: Show differences between working directory and last commit
+Command: git diff
+
+Topic: Add
+Explanation: Stage files for commit
+Command: git add <filename>; git add .
+
+Topic: Commit
+Explanation: Save staged changes permanently
+Command: git commit -m "Message"
+
+Topic: Branch List
+Explanation: Show all branches and current branch
+Command: git branch
+
+Topic: Log
+Explanation: View commit history
+Command: git log
+
+Topic: Show File From Old Commit
+Explanation: Display a file from a specific commit
+Command: git show <commitID>:<filename>
+
+Topic: Checkout Old Commit
+Explanation: View entire repo at an older commit
+Command: git checkout <commitID> -- *
+
+Topic: Switch to Main Branch
+Explanation: Return to main branch
+Command: git checkout main
+
+Topic: Restore File
+Explanation: Restore file to last committed state
+Command: git restore <filename>; git restore .
+
+Topic: Unstage File
+Explanation: Undo git add
+Command: git restore --staged <filename>
+
+Topic: Restore Worktree
+Explanation: Undo staged changes but keep commit
+Command: git restore --worktree <filename>
+
+Topic: Diff Staged Files
+Explanation: Show staged changes
+Command: git diff --cached
+
+Topic: Reset Soft
+Explanation: Go back one commit but keep changes
+Command: git reset --soft HEAD^
+
+Topic: Reset Hard
+Explanation: Go back one commit and delete changes
+Command: git reset --hard HEAD^
+
+Topic: Log Last 2 Commits
+Explanation: Show last 2 commits with patches
+Command: git log -p -2
+
+Topic: Log Summary
+Explanation: Show summary of changes
+Command: git log --stat
+
+Topic: Log One Line
+Explanation: Compact commit history
+Command: git log --pretty=oneline
+
+Topic: Custom Log Format
+Explanation: Show hash, author, time, message
+Command: git log --pretty="%h -- %an, %ar, %s"
+
+Topic: Search in Commits
+Explanation: Search for string in code changes
+Command: git log -S "<string>"
+
+Topic: Search Commit Messages
+Explanation: Search commit messages only
+Command: git log --grep="<string>"
+
+Topic: Search by Time
+Explanation: Filter commits by date
+Command: git log --since="2024-01-01"
+
+Topic: Search by Author
+Explanation: Filter commits by author
+Command: git log --author="<name>"
+
+Topic: Push First Time
+Explanation: Connect local repo to remote and push
+Command: git remote add origin <url>; git branch -M main; git push -u origin main
+
+Topic: Push Existing Repo
+Explanation: Push new commits to remote
+Command: git push
+
+Topic: Pull
+Explanation: Fetch and merge latest changes
+Command: git pull
+
+Topic: Clone
+Explanation: Download a remote repository
+Command: git clone <url>
+
+Topic: Create Branch
+Explanation: Create a new branch
+Command: git branch <branchName>
+
+Topic: Switch Branch
+Explanation: Move to another branch
+Command: git checkout <branchName>
+
+Topic: Merge to Main
+Explanation: Merge branch into main
+Command: git checkout main; git merge <branchName>; git push
+
+Topic: Merge to Remote Branch
+Explanation: Push merged branch to remote
+Command: git push origin <branchName>
+
+Topic: Merge Conflict
+Explanation: Resolve conflicting changes
+Command: Resolve manually in editor; save; :wq
+
+Topic: Forking
+Explanation: Copy someone’s repo to your GitHub account
+Command: GitHub UI → Fork → Edit → Pull Request
+
+Topic: .gitignore
+Explanation: Ignore files from being tracked
+Command: Create .gitignore and list patterns
+
+Topic: Ignore Extensions
+Explanation: Ignore all .log files
+Command: *.log
+
+Topic: Clean
+Explanation: Remove untracked files
+Command: git clean -n; git clean -f
+
+Topic: Tags
+Explanation: Create version tags
+Command: git tag -a <tagName> -m "comment"; git show <tagName>
+
+Topic: Tag Older Commit
+Explanation: Tag a previous commit
+Command: git tag -a <tagName> <commitID> -m "comment"
+
+Topic: List Tags
+Explanation: Show all tags
+Command: git tag
+
+Topic: Push Tags
+Explanation: Push all tags to remote
+Command: git push --tags
+
+Topic: GitHub Pages
+Explanation: Publish static website
+Command: GitHub → Settings → Pages → Enable
